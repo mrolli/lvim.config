@@ -21,6 +21,10 @@ vim.opt.whichwrap = "b,s"
 -- add a highlighted column
 vim.opt.colorcolumn = "120"
 vim.opt.cindent = true
+-- configure folding for Treesitter usage
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 5
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
