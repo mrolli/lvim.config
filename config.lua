@@ -29,18 +29,17 @@ vim.opt.foldlevel = 5
 lvim.leader = "space"
 
 -- Colorscheme setttings
-lvim.colorscheme = "tokyonight"
-lvim.builtin.lualine.theme = "tokyonight"
+require('rollisch.switch_theme').to_gruvbox_material()
+-- require('rollisch.switch_theme').to_tokyonight_storm()
+-- require('rollisch.switch_theme').to_rose_pine_moon()
+-- require('rollisch.switch_theme').to_catpuccin()
+
+-- lualine configuration
 lvim.builtin.lualine.sections.lualine_y = { "spaces", {
   "fileformat",
   icons_enabled = false
 }, "encoding", "filetype" }
 lvim.builtin.lualine.sections.lualine_z = { "progress", "location" }
-vim.g.tokyonight_style = "night"
-vim.g.tokyonight_italic_functions = true
-vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
--- Change the "hint" color to the "orange" color, and make the "error" color bright red
-vim.g.tokyonight_colors = { hint = "orange", error = "#ff0000" }
 
 -- include vimscript for altering theme related stuff
 vim.cmd 'source ~/.config/lvim/theme.vim'
@@ -257,13 +256,22 @@ require("which-key").register({
 lvim.plugins = {
   { "editorconfig/editorconfig-vim" },
   { "jeffkreeftmeijer/vim-numbertoggle" }, -- automatically toggle relativenumber for active buffer
-  {
+  { -- visual indentation markers
     "lukas-reineke/indent-blankline.nvim",
     config = function()
       require("rollisch.indent_blankline").config()
     end
-  }, -- visual indentation markers
+  },
+  -- themes
+  {
+    'rose-pine/neovim',
+    as = 'rose-pine',
+    tag = 'v1.*'
+  },
+  { "catppuccin/nvim", as = "catppuccin" },
+  { "sainnhe/gruvbox-material" },
   { "folke/tokyonight.nvim" },
+  --]]
   {
     "folke/zen-mode.nvim",
     config = function()
