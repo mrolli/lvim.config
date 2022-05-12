@@ -15,7 +15,7 @@ vim.opt.relativenumber = true
 -- no mouse support
 vim.opt.mouse = ""
 -- no automatic system clipboard usage
-vim.opt.clipboard = ""
+-- vim.opt.clipboard = ""
 -- no lines crossing usng cursor and h,l aka classic vim defaults
 vim.opt.whichwrap = "b,s"
 -- add a highlighted column
