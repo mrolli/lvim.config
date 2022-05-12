@@ -63,7 +63,7 @@ lvim.keys.normal_mode["∆"] = ":m .+1<CR>=="
 lvim.keys.normal_mode["˚"] = ":m .-2<CR>=="
 lvim.keys.normal_mode["<C-w>t"] = "<cmd>Twilight<cr>"
 lvim.keys.normal_mode["<C-w>z"] = "<cmd>ZenMode<cr>"
-lvim.keys.visual_mode["p"] = '"_dp'
+lvim.keys.visual_mode["p"] = '"_dP'
 lvim.keys.visual_mode["P"] = '"_dP'
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
