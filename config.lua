@@ -172,16 +172,16 @@ lvim.builtin.treesitter.textobjects = {
 }
 
 -- Add lables to the textobjects keybindings
-require("which-key").register({
-  ["[["] = { "Previous class start"},
-  ["[]"] = { "Previous class end"},
-  ["]]"] = { "Next class end"},
-  ["]["] = { "Next class start"},
-  ["<leader>a"] = { "Swap w/next param" },
-  ["<leader>A"] = { "Swap w/prev param" }
-})
--- lvim.builtin.which_key.mappings["a"] = { "Swap with next param" }
--- lvim.builtin.which_key.mappings["A"] = { "Swap with prev param" }
+lvim.builtin.which_key.on_config_done = function()
+  require('which-key').register({
+    ["[["] = { "Previous class start"},
+    ["[]"] = { "Previous class end"},
+    ["]]"] = { "Next class end"},
+    ["]["] = { "Next class start"},
+    ["<leader>a"] = { "Swap w/next param" },
+    ["<leader>A"] = { "Swap w/prev param" }
+  })
+end
 
 -- generic LSP settings
 
