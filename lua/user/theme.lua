@@ -3,7 +3,7 @@
 local M = {}
 
 -- See :h gruvbox-material for docs
-M.to_gruvbox_material = function ()
+M.gruvbox_material = function ()
   vim.g.gruvbox_material_palette = 'material'
   vim.g.gruvbox_material_background = 'soft'
   vim.g.gruvbox_material_enable_bold = 1
@@ -22,7 +22,7 @@ M.to_gruvbox_material = function ()
 end
 
 -- https://github.com/folke/tokyonight.nvim
-M.to_tokyonight_storm = function ()
+M.tokyonight_storm = function ()
   vim.g.tokyonight_dev = true
   vim.g.tokyonight_style = "storm"
   vim.g.tokyonight_sidebars = {
@@ -60,7 +60,7 @@ M.to_tokyonight_storm = function ()
 end
 
 -- See https://rosepinetheme.com/
-M.to_rose_pine_moon = function ()
+M.rose_pine_moon = function ()
   require('rose-pine').setup({
     ---@usage 'main'|'moon'
     dark_variant = 'main',
@@ -105,7 +105,7 @@ M.to_rose_pine_moon = function ()
 end
 
 -- See https://github.com/catppuccin/nvim
-M.to_catpuccin = function ()
+M.catpuccin = function ()
   require('catppuccin').setup {
     transparent_background = lvim.transparent_window,
     term_colors = false,
