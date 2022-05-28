@@ -5,6 +5,7 @@ Set some lvim specific stuff first
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save = false
+-- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
 
@@ -17,7 +18,7 @@ opt.relativenumber = true
 -- no mouse support
 opt.mouse = ""
 -- no automatic system clipboard usage
-opt.clipboard = ""
+-- vim.opt.clipboard = ""
 -- no lines crossing usng cursor and h,l aka classic vim defaults
 opt.whichwrap = "b,s"
 -- add a highlighted column
