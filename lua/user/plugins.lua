@@ -91,7 +91,6 @@ M.config = function()
       end,
     },
     { "github/copilot.vim" },
-    -- { "pearofducks/ansible-vim" },
     {
       "pwntester/octo.nvim",
       requires = {
