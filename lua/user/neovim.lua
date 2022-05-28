@@ -18,7 +18,7 @@ opt.relativenumber = true
 -- no mouse support
 opt.mouse = ""
 -- no automatic system clipboard usage
--- vim.opt.clipboard = ""
+-- opt.clipboard = ""
 -- no lines crossing usng cursor and h,l aka classic vim defaults
 opt.whichwrap = "b,s"
 -- add a highlighted column
@@ -27,4 +27,4 @@ opt.cindent = true
 -- configure folding for Treesitter usage
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
-opt.foldlevel = 5
+opt.foldlevel = 7
