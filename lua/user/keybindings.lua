@@ -11,7 +11,7 @@ M.config = function()
   -- edit a default keymapping
   -- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
   lvim.keys.insert_mode["jj"] = false
-  lvim.keys.insert_mode["k"] = false
+  lvim.keys.insert_mode["kj"] = false
   lvim.keys.insert_mode["jk"] = false
   lvim.keys.insert_mode["∆"] = "<Esc>:m .+1<CR>==gi"
   lvim.keys.insert_mode["˚"] = "<Esc>:m .-2<CR>==gi"
