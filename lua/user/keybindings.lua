@@ -1,5 +1,5 @@
 --[[
-Add/change additional keybindings
+keymappings [view all the defaults by pressing <leader>Lk]
 ]]
 local M = {}
 
@@ -20,7 +20,17 @@ M.config = function()
   lvim.keys.normal_mode["<C-w>t"] = "<cmd>Twilight<cr>"
   lvim.keys.normal_mode["<C-w>z"] = "<cmd>ZenMode<cr>"
   lvim.keys.visual_mode["p"] = '"_dP'
-  lvim.keys.visual_mode["P"] = '"_dP'
+
+  -- yank to unnameplus register
+  lvim.builtin.which_key.mappings["y"]  = { '"+y', "Yank 2 clipboard" }
+  lvim.builtin.which_key.vmappings["y"] = { '"+y', "Yank 2 clipboard" }
+  lvim.builtin.which_key.mappings["Y"]  = { '"+Y', "Yank 2 clipboard" }
+  -- delete to black hole register
+  lvim.builtin.which_key.mappings["d"]  = { '"_d', "Del 2 black hole reg" }
+  lvim.builtin.which_key.vmappings["d"] = { '"_d', "Del 2 black hole reg" }
+
+
+  -- Map telescope projects
   lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
   -- Use which-key to add extra bindings with the leader-key prefix
