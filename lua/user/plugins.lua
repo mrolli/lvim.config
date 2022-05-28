@@ -90,8 +90,19 @@ M.config = function()
         require("user.plugins.colorizer").config()
       end,
     },
-    { "github/copilot.vim" }
+    { "github/copilot.vim" },
     -- { "pearofducks/ansible-vim" },
+    {
+      "pwntester/octo.nvim",
+      requires = {
+        "nvim-lua/plenary.nvim",
+        "nvim-telescope/telescope.nvim",
+        "kyazdani42/nvim-web-devicons",
+      },
+      config = function()
+        require("user.plugins.octo").config()
+      end
+    }
   }
 end
 
