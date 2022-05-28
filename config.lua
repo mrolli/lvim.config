@@ -1,14 +1,15 @@
+-- Neovim configuration
+-- ==============================
 --[[
-lvim is the global options object
-
-Linters should be
-filled in as strings with either
-a global executable or a path to
-an executable
+This is the top configuration file of my neovim configuration
+based on the convenience layer brought by LunarVim.
 ]]
--- THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
 
+
+-- General lvim settings and Vim options
+-- ==============================
 require('user.neovim')
+
 
 -- Colorscheme setttings
 -- ==============================
@@ -33,11 +34,11 @@ require("user.builtin").config()
 require('user.plugins').config()
 
 
--- Additional keybindings
--- ==============================
-require('user.keybindings').config()
-
-
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- ==============================
 require('user.autocommands').config()
+
+
+-- Additional keybindings
+-- ==============================
+require('user.keybindings').config()
