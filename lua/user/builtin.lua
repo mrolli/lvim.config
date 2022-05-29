@@ -4,7 +4,8 @@ Change/add to lvim builtins
 local M = {}
 
 M.config = function()
-  -- Lualine
+
+  -- lualine - https://github.com/nvim-lualine/lualine.nvim
   -- ================================
   lvim.builtin.lualine.sections.lualine_y = { "spaces", {
     "fileformat",
@@ -12,16 +13,31 @@ M.config = function()
   }, "encoding", "filetype" }
   lvim.builtin.lualine.sections.lualine_z = { "progress", "location" }
 
-  --
+
+  -- alpha-nvim configuration - https://github.com/goolord/alpha-nvim
+  -- ================================
   lvim.builtin.alpha.active = true
   lvim.builtin.alpha.mode = "dashboard"
+
+
+  -- nvim-notify - https://github.com/rcarriga/nvim-notify
+  -- ================================
   lvim.builtin.notify.active = true
+
+
+  -- toggleterm.nvim - https://github.com/akinsho/toggleterm.nvim
+  -- ================================
   lvim.builtin.terminal.active = true
+
+
+  -- NvimTree - https://github.com/kyazdani42/nvim-tree.lua
+  -- ================================
   lvim.builtin.nvimtree.setup.view.side = "left"
   lvim.builtin.nvimtree.show_icons.git = 0
 
 
-  -- Treesitter configuration
+  -- Treesitter - https://github.com/nvim-treesitter/nvim-treesitter
+  -- nvim-treesitter-textobjects - https://github.com/nvim-treesitter/nvim-treesitter-textobjects
   -- ================================
   local languages = vim.tbl_flatten {
     {"bash", "c", "css", "html", "java", "javascript", "json" },
@@ -85,7 +101,8 @@ M.config = function()
     })
   end
 
-    -- Telescope
+
+  -- Telescope - https://github.com/nvim-telescope/telescope.nvim
   -- =========================================
   lvim.builtin.telescope.defaults.prompt_prefix = " > "
   -- Change Telescope navigation to use j and k for navigation and n and p for history in both input and normal mode.
