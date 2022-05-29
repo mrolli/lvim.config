@@ -19,16 +19,34 @@ M.config = function()
   lvim.keys.normal_mode["˚"] = ":m .-2<CR>=="
   lvim.keys.normal_mode["<C-w>t"] = "<cmd>Twilight<cr>"
   lvim.keys.normal_mode["<C-w>z"] = "<cmd>ZenMode<cr>"
+
+  -- Delete to black hole register by default when pasting over a selection
   lvim.keys.visual_mode["p"] = '"_dP'
 
-  -- yank to unnameplus register
-  lvim.builtin.which_key.mappings["y"]  = { '"+y', "Yank 2 clipboard" }
-  lvim.builtin.which_key.vmappings["y"] = { '"+y', "Yank 2 clipboard" }
-  lvim.builtin.which_key.mappings["Y"]  = { '"+Y', "Yank 2 clipboard" }
-  -- delete to black hole register
-  lvim.builtin.which_key.mappings["d"]  = { '"_d', "Del 2 black hole reg" }
-  lvim.builtin.which_key.vmappings["d"] = { '"_d', "Del 2 black hole reg" }
+  --[[
+  Using leader + y/Y to yank to unnameplus or paste from unnamedplus register.
+  The register unnamedplus is the system's clipboard and is the default
+  clipboard register in lvim, but I don't like that.
+  Therefore cliboard is changed to unnamed (see lua/user/neovim.lua) and these
+  additional mappings using the leader key are in place to yank to and paste
+  from the unnamedplus register.
+  ]]
+  -- Yank to system clipboard
+  lvim.builtin.which_key.mappings.y = { '"+y', "Yank to clipboard" }
+  lvim.builtin.which_key.mappings.y = {
+      name = "+Yank",
+      y = {
+        '"+yy', "Yank line to clipboard" }
+      }
+  lvim.builtin.which_key.vmappings.y = { '"+y', "Yank to clipboard" }
+  -- Paste from system clipbard
+  lvim.builtin.which_key.mappings.p = { '"+p', "Paste from clipboard" }
+  lvim.builtin.which_key.mappings.P = { '"+P', "Paste from clipboard" }
+  lvim.builtin.which_key.vmappings.p = { '"+p', "Paste from clipboard" }
 
+  -- Deliberately delete to black hole register
+  lvim.builtin.which_key.mappings.d  = { '"_d', "Del to black hole" }
+  lvim.builtin.which_key.vmappings.d = { '"_d', "Del to black hole" }
 
   -- Map telescope projects
   lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
