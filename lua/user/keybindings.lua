@@ -30,6 +30,7 @@ M.config = function()
   Therefore cliboard is changed to unnamed (see lua/user/neovim.lua) and these
   additional mappings using the leader key are in place to yank to and paste
   from the unnamedplus register.
+  Found at https://github.com/LunarVim/LunarVim/issues/930#issuecomment-890597260
   ]]
   -- Yank to system clipboard
   lvim.builtin.which_key.mappings.y = { '"+y', "Yank to clipboard" }
