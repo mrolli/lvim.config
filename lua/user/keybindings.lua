@@ -52,7 +52,7 @@ M.config = function()
   -- Map telescope projects
   lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
-  -- Use which-key to add extra bindings with the leader-key prefix
+  -- Extra bindings with the leader-key prefix
   lvim.builtin.which_key.mappings["t"] = {
     name = "+Trouble",
     r = { "<cmd>Trouble lsp_references<cr>", "References" },
@@ -61,6 +61,15 @@ M.config = function()
     q = { "<cmd>Trouble quickfix<cr>", "QuickFix" },
     l = { "<cmd>Trouble loclist<cr>", "LocationList" },
     w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
+  }
+
+  -- Extra bindings for vim-fugitive functionality
+  lvim.builtin.which_key.mappings.g.S = { "<cmd>G push<CR>", "Push" }
+  lvim.builtin.which_key.mappings.g.L = { "<cmd>G pull<CR>", "Pull" }
+  lvim.builtin.which_key.mappings.g.G = {
+    name = "+GitHub",
+    i = { "<cmd>Octo issue list<cr>", "Issues" },
+    p = { "<cmd>Octo pr list<cr>", "PR" },
   }
 end
 
