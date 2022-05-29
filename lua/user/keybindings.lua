@@ -7,12 +7,12 @@ M.config = function()
   -- add your own keymapping
   -- lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
   -- unmap a default keymapping
-  -- lvim.keys.normal_mode["<C-Up>"] = false
+  -- vim.keymap.del("n", "<C-Up>")
   -- edit a default keymapping
-  -- lvim.keys.normal_mode["<C-q>"] = ":q<cr>"
-  lvim.keys.insert_mode["jj"] = false
-  lvim.keys.insert_mode["kj"] = false
-  lvim.keys.insert_mode["jk"] = false
+  -- lvim.keys.normal_mode["<C-q>"] = ":q<cr>" -- or vim.keymap.set("n", "<C-q>", ":q<cr>" )
+  vim.keymap.del("i", "jj")
+  vim.keymap.del("i", "kj")
+  vim.keymap.del("i", "jk")
   lvim.keys.insert_mode["∆"] = "<Esc>:m .+1<CR>==gi"
   lvim.keys.insert_mode["˚"] = "<Esc>:m .-2<CR>==gi"
   lvim.keys.normal_mode["∆"] = ":m .+1<CR>=="
