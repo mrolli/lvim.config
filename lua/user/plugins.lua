@@ -63,6 +63,7 @@ M.config = function()
     },
     { "nvim-treesitter/nvim-treesitter-textobjects" },
     { "tpope/vim-fugitive" },
+    { "tpope/vim-repeat" },
     { "tpope/vim-surround",
       keys = {
         { 'n', 'ds' },
