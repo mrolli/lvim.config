@@ -49,6 +49,9 @@ M.config = function()
   lvim.builtin.which_key.mappings.d  = { '"_d', "Del to black hole" }
   lvim.builtin.which_key.vmappings.d = { '"_d', "Del to black hole" }
 
+  -- Make file in current buffer executable
+  lvim.builtin.which_key.mappings.x = { "<cmd>silent !chmod +x %<CR>", "Make executable" }
+
   -- Map telescope projects
   lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
