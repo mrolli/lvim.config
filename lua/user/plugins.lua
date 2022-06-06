@@ -14,7 +14,7 @@ M.config = function()
         config = function()
           vim.g.EditorConfig_exclude_patterns = { 'fugitive://.*' }
         end,
-        disable = not lvim.builtin.editorconfig.active,
+        disable = not lvim.user.builtin.editorconfig.active,
     },
     { "jeffkreeftmeijer/vim-numbertoggle" }, -- automatically toggle relativenumber for active buffer
     { -- visual indentation markers

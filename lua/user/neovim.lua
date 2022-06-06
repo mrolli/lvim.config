@@ -8,10 +8,12 @@ lvim.format_on_save = false
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
+-- Create a new "user.builtin" namespace for the config of non-core plugins
+lvim.user = {
+  builtin = {}
+}
 
---[[
-then set standard vim options here
-]]
+-- then set standard vim options here
 local opt = vim.opt
 
 opt.relativenumber = true

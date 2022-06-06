@@ -21,7 +21,7 @@ require('user.theme').gruvbox_material()
 
 -- Customization
 -- ==============================
-lvim.builtin.editorconfig = { active = true } -- enable/disable editorconfig
+lvim.user.builtin.editorconfig = { active = true } -- enable/disable editorconfig
 
 
 -- Core plugins configuration
