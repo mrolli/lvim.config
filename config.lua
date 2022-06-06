@@ -22,6 +22,7 @@ require('user.theme').gruvbox_material()
 -- Customization
 -- ==============================
 lvim.user.builtin.editorconfig = { active = true } -- enable/disable editorconfig
+lvim.user.builtin.octo         = { active = true } -- enhalbe/disable octo plugin
 
 
 -- Core plugins configuration

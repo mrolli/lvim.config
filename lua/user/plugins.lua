@@ -101,7 +101,8 @@ M.config = function()
       },
       config = function()
         require("user.plugins.octo").config()
-      end
+      end,
+      disable = not lvim.user.builtin.octo.active,
     }
   }
 end
