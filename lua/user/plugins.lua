@@ -10,11 +10,11 @@ M.config = function()
   lvim.plugins = {
     {
       "editorconfig/editorconfig-vim",
-        event = "BufRead",
-        config = function()
-          vim.g.EditorConfig_exclude_patterns = { 'fugitive://.*' }
-        end,
-        disable = not lvim.user.builtin.editorconfig.active,
+      event = "BufRead",
+      config = function()
+        vim.g.EditorConfig_exclude_patterns = { 'fugitive://.*' }
+      end,
+      disable = not lvim.user.builtin.editorconfig.active,
     },
     { "jeffkreeftmeijer/vim-numbertoggle" }, -- automatically toggle relativenumber for active buffer
     { -- visual indentation markers
