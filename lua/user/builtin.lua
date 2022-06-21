@@ -33,7 +33,7 @@ M.config = function()
   -- NvimTree - https://github.com/kyazdani42/nvim-tree.lua
   -- ================================
   lvim.builtin.nvimtree.setup.view.side = "left"
-  lvim.builtin.nvimtree.show_icons.git = 0
+  lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
 
   -- Treesitter - https://github.com/nvim-treesitter/nvim-treesitter
