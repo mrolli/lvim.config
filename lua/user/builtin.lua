@@ -20,6 +20,12 @@ M.config = function()
   lvim.builtin.alpha.mode = "dashboard"
 
 
+  -- Comment.nvim configuration - https://github.com/numToStr/Comment.nvim
+  -- ================================
+  lvim.builtin.comment.toggler.block = "gcb"
+  lvim.builtin.comment.mappings.extra = true
+
+
   -- nvim-notify - https://github.com/rcarriga/nvim-notify
   -- ================================
   lvim.builtin.notify.active = true
