@@ -24,7 +24,7 @@ opt.clipboard = ""
 -- no lines crossing usng cursor and h,l aka classic vim defaults
 opt.whichwrap = "b,s"
 -- add a highlighted column
-opt.colorcolumn = "120"
+opt.colorcolumn = "80"
 opt.cindent = true
 -- configure folding for Treesitter usage
 opt.foldmethod = "expr"
