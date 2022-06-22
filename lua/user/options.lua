@@ -26,7 +26,20 @@ opt.whichwrap = "b,s"
 -- add a highlighted column
 opt.colorcolumn = "80"
 opt.cindent = true
+
 -- configure folding for Treesitter usage
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldlevel = 7
+
+-- configure wildmenu related options
+opt.wildmode = "full"
+opt.wildoptions = "pum"
+opt.wildignore = {
+  "*~",
+  "**/.git/*",
+  "**/.vagrant/*",
+  "*.o",
+  "*.pyc", "*pycache*",
+}
+opt.pumblend = 10 -- make pop-up menu slightly transparent
