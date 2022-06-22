@@ -8,7 +8,7 @@ based on the convenience layer brought by LunarVim.
 
 -- General lvim settings and Vim options
 -- ==============================
-require('user.neovim')
+require('user.options')
 
 
 -- Colorscheme setttings
