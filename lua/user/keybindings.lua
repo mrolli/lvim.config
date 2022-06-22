@@ -27,7 +27,7 @@ M.config = function()
   Using leader + y/Y to yank to unnameplus or paste from unnamedplus register.
   The register unnamedplus is the system's clipboard and is the default
   clipboard register in lvim, but I don't like that.
-  Therefore cliboard is changed to unnamed (see lua/user/neovim.lua) and these
+  Therefore clipboard is changed to unnamed (see lua/user/neovim.lua) and these
   additional mappings using the leader key are in place to yank to and paste
   from the unnamedplus register.
   Found at https://github.com/LunarVim/LunarVim/issues/930#issuecomment-890597260
@@ -39,10 +39,11 @@ M.config = function()
       y = {
         '"+yy', "Yank line to clipboard" }
       }
-  lvim.builtin.which_key.vmappings.y = { '"+y', "Yank to clipboard" }
   -- Paste from system clipbard
   lvim.builtin.which_key.mappings.p = { '"+p', "Paste from clipboard" }
   lvim.builtin.which_key.mappings.P = { '"+P', "Paste from clipboard" }
+  -- yank/paste to system clipboard in visual mode
+  lvim.builtin.which_key.vmappings.y = { '"+y', "Yank to clipboard" }
   lvim.builtin.which_key.vmappings.p = { '"+p', "Paste from clipboard" }
 
   -- Deliberately delete to black hole register
