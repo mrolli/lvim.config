@@ -24,5 +24,8 @@ tbd
 
 ## Included Plugins
 
-tbd
+Besides the [LunarVim core plugins](https://www.lunarvim.org/plugins/01-core-plugins-list.html)
+my configuration features the following plugins, which I find very useful:
 
+* Treesitter related plugins
+    * [p00f/nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow): Rainbow parenthesis to easier match related parenthesis

@@ -56,7 +56,8 @@ M.config = function()
   }
   lvim.builtin.treesitter.ensure_installed = languages
   lvim.builtin.treesitter.ignore_install = { "haskell", "norg" }
-  lvim.builtin.treesitter.highlight.enabled = true
+  lvim.builtin.treesitter.highlight.enable = true
+  lvim.builtin.treesitter.rainbow.enable = true
   lvim.builtin.treesitter.textobjects = {
     select = {
       enable = true,
@@ -100,7 +101,7 @@ M.config = function()
       },
     },
   }
-  -- add label for some of above additional textobjects
+  -- add labels for some of above additional textobjects
   lvim.builtin.which_key.on_config_done = function()
     require('which-key').register({
       ["[["] = { "Previous class start"},

@@ -62,6 +62,7 @@ M.config = function()
       end
     },
     { "nvim-treesitter/nvim-treesitter-textobjects" },
+    { "p00f/nvim-ts-rainbow" },
     { "tpope/vim-fugitive" },
     { "tpope/vim-repeat" },
     { "tpope/vim-surround",
