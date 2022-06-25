@@ -84,7 +84,12 @@ M.config = function()
     },
     { "rodjek/vim-puppet" },
     { "godlygeek/tabular" },
-    { "ntpeters/vim-better-whitespace" },
+    {
+      "ntpeters/vim-better-whitespace",
+      setup = function()
+        require("user.plugins.better_whitespace").setup()
+      end
+    },
     { "vim-scripts/loremipsum" },
     {
       "norcalli/nvim-colorizer.lua",
