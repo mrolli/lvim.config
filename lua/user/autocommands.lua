@@ -18,11 +18,6 @@ vim.api.nvim_create_autocmd("FileType", {
 local M = {}
 
 M.config = function()
-  vim.api.nvim_create_autocmd("FileType", {
-    pattern = "markdown",
-    -- do not automatically strip whitespace from markdown files
-    command = ":DisableStripWhitespaceOnSave",
-  })
 
 end
 
