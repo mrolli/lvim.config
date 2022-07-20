@@ -109,6 +109,16 @@ M.config = function()
         require("user.plugins.octo").config()
       end,
       disable = not lvim.user.builtin.octo.active,
+    },
+    {
+      "iamcco/markdown-preview.nvim",
+      run = "cd app && npm install",
+      setup = function()
+        vim.g.mkdp_filetypes = { "markdown" }
+        vim.g.mkdp_echo_preview_url = 1
+      end,
+      ft = { "markdown" },
+      disable = not lvim.user.builtin.markdown_preview.active,
     }
   }
 end
