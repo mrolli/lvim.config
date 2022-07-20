@@ -17,8 +17,11 @@ M.config = function()
   lvim.keys.insert_mode["˚"] = "<Esc>:m .-2<CR>==gi"
   lvim.keys.normal_mode["∆"] = ":m .+1<CR>=="
   lvim.keys.normal_mode["˚"] = ":m .-2<CR>=="
+  -- Twilight/ZenMode
   lvim.keys.normal_mode["<C-w>t"] = "<cmd>Twilight<cr>"
   lvim.keys.normal_mode["<C-w>z"] = "<cmd>ZenMode<cr>"
+  -- Markdown preview mappings
+  lvim.keys.normal_mode["<C-w>p"] = "<cmd>MarkdownPreview<cr>"
 
   -- Delete to black hole register by default when pasting over a selection
   lvim.keys.visual_mode["p"] = '"_dP'
