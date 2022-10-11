@@ -9,7 +9,7 @@ M.setup = function()
   vim.g.strip_only_modified_lines = 1
 
   -- The same list as the default except markown is removed to show whitepace in markdown files
-  vim.g.better_whitespace_filetypes_blacklist = { 'diff', 'git', 'gitcommit', 'unite', 'qf', 'help', 'fugitive' }
+  vim.g.better_whitespace_filetypes_blacklist = { 'diff', 'git', 'gitcommit', 'unite', 'qf', 'help', 'fugitive', 'toggleterm' }
 
   -- Autocommands for this plugins
   local group = vim.api.nvim_create_augroup("user.plugins.better_whitespace", { clear = true })
