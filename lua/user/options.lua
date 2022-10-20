@@ -8,6 +8,9 @@ lvim.format_on_save = false
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
+-- to disable icons and use a minimalist setup, uncomment the following
+-- lvim.use_icons = false
+
 -- Create a new "user.builtin" namespace for the config of non-core plugins
 lvim.user = {
   builtin = {}
