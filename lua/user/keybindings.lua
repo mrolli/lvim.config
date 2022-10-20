@@ -13,6 +13,9 @@ M.config = function()
   vim.keymap.del("i", "jj")
   vim.keymap.del("i", "kj")
   vim.keymap.del("i", "jk")
+  -- Switch buffer with shift + h/l
+  -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
+  -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
   lvim.keys.insert_mode["∆"] = "<Esc>:m .+1<CR>==gi"
   lvim.keys.insert_mode["˚"] = "<Esc>:m .-2<CR>==gi"
   lvim.keys.normal_mode["∆"] = ":m .+1<CR>=="
@@ -38,10 +41,11 @@ M.config = function()
   -- Yank to system clipboard
   lvim.builtin.which_key.mappings.y = { '"+y', "Yank to clipboard" }
   lvim.builtin.which_key.mappings.y = {
-      name = "+Yank",
-      y = {
-        '"+yy', "Yank line to clipboard" }
-      }
+    name = "+Yank",
+    y = {
+      '"+yy', "Yank line to clipboard"
+    }
+  }
   -- Paste from system clipbard
   lvim.builtin.which_key.mappings.p = { '"+p', "Paste from clipboard" }
   lvim.builtin.which_key.mappings.P = { '"+P', "Paste from clipboard" }
