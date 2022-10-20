@@ -28,3 +28,6 @@ Cheatsheet
 whitespace
 autocommand
 autocommands
+stdout
+stderr
+ShellCheck
