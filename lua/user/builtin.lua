@@ -34,6 +34,7 @@ M.config = function()
   -- toggleterm.nvim - https://github.com/akinsho/toggleterm.nvim
   -- ================================
   lvim.builtin.terminal.active = true
+  lvim.builtin.terminal.open_mapping = [[<c-t>]]
 
 
   -- NvimTree - https://github.com/kyazdani42/nvim-tree.lua
