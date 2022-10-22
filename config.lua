@@ -23,7 +23,6 @@ require('user.theme').gruvbox_material()
 -- ==============================
 lvim.user.builtin.editorconfig     = { active = true } -- enable/disable editorconfig
 lvim.user.builtin.markdown_preview = { active = true } -- enable/disable mardown preview
-lvim.user.builtin.octo             = { active = true } -- enhalbe/disable octo plugin
 
 
 -- Core plugins configuration

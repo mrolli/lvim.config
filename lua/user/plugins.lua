@@ -90,19 +90,6 @@ M.config = function()
         require("user.plugins.colorizer").config()
       end,
     },
-    -- { "github/copilot.vim" },
-    -- {
-    --   "pwntester/octo.nvim",
-    --   requires = {
-    --     "nvim-lua/plenary.nvim",
-    --     "nvim-telescope/telescope.nvim",
-    --     "kyazdani42/nvim-web-devicons",
-    --   },
-    --   config = function()
-    --     require("user.plugins.octo").config()
-    --   end,
-    --   disable = not lvim.user.builtin.octo.active,
-    -- },
     {
       "iamcco/markdown-preview.nvim",
       run = "cd app && npm install",
