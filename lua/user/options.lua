@@ -17,32 +17,34 @@ lvim.user = {
 }
 
 -- then set standard vim options here
-local opt = vim.opt
-
-opt.relativenumber = true
+vim.opt.timeoutlen = 500
+-- no command line by default
+vim.opt.cmdheight=0
+-- turn on relative line numbers
+vim.opt.relativenumber = true
 -- no mouse support
-opt.mouse = ""
+vim.opt.mouse = ""
 -- no automatic system clipboard usage
-opt.clipboard = ""
+vim.opt.clipboard = ""
 -- no lines crossing usng cursor and h,l aka classic vim defaults
-opt.whichwrap = "b,s"
+vim.opt.whichwrap = "b,s"
 -- add a highlighted column
-opt.colorcolumn = "80"
-opt.cindent = true
+vim.opt.colorcolumn = "80"
+vim.opt.cindent = true
 
 -- configure folding for Treesitter usage
-opt.foldmethod = "expr"
-opt.foldexpr = "nvim_treesitter#foldexpr()"
-opt.foldlevel = 7
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 7
 
 -- configure wildmenu related options
-opt.wildmode = "full"
-opt.wildoptions = "pum"
-opt.wildignore = {
+vim.opt.wildmode = "full"
+vim.opt.wildoptions = "pum"
+vim.opt.wildignore = {
   "*~",
   "**/.git/*",
   "**/.vagrant/*",
   "*.o",
   "*.pyc", "*pycache*",
 }
-opt.pumblend = 10 -- make pop-up menu slightly transparent
+vim.opt.pumblend = 10 -- make pop-up menu slightly transparent
