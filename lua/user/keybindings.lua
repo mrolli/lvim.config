@@ -10,12 +10,12 @@ M.config = function()
   -- vim.keymap.del("n", "<C-Up>")
   -- edit a default keymapping
   -- lvim.keys.normal_mode["<C-q>"] = ":q<cr>" -- or vim.keymap.set("n", "<C-q>", ":q<cr>" )
-  vim.keymap.del("i", "jj")
-  vim.keymap.del("i", "kj")
-  vim.keymap.del("i", "jk")
-  -- Switch buffer with shift + h/l
+
+  -- Cycle buffer with shift + h/l
   -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
   -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+
+  -- Move line up/down using alt+j/k in normal and insert mode
   lvim.keys.insert_mode["∆"] = "<Esc>:m .+1<CR>==gi"
   lvim.keys.insert_mode["˚"] = "<Esc>:m .-2<CR>==gi"
   lvim.keys.normal_mode["∆"] = ":m .+1<CR>=="
@@ -65,7 +65,7 @@ M.config = function()
 
   -- Extra bindings with the leader-key prefix
   lvim.builtin.which_key.mappings["t"] = {
-    name = "+Trouble",
+    name = "Trouble",
     r = { "<cmd>Trouble lsp_references<cr>", "References" },
     f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
     d = { "<cmd>Trouble document_diagnostics<cr>", "Diagnostics" },
@@ -78,7 +78,7 @@ M.config = function()
   lvim.builtin.which_key.mappings.g.S = { "<cmd>G push<CR>", "Push" }
   lvim.builtin.which_key.mappings.g.L = { "<cmd>G pull<CR>", "Pull" }
   lvim.builtin.which_key.mappings.g.G = {
-    name = "+GitHub",
+    name = "GitHub",
     i = { "<cmd>Octo issue list<cr>", "Issues" },
     p = { "<cmd>Octo pr list<cr>", "PR" },
   }

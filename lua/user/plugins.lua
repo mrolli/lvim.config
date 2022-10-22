@@ -17,15 +17,8 @@ M.config = function()
       disable = not lvim.user.builtin.editorconfig.active,
     },
     { "jeffkreeftmeijer/vim-numbertoggle" }, -- automatically toggle relativenumber for active buffer
-    -- { -- visual indentation markers
-    --   "lukas-reineke/indent-blankline.nvim",
-    --   config = function()
-    --     require("user.plugins.indent_blankline").config()
-    --   end
-    -- },
     -- themes
     { "sainnhe/gruvbox-material" },
-    -- { "folke/tokyonight.nvim" },
     { "catppuccin/nvim", as = "catppuccin" },
     {
       'rose-pine/neovim',
