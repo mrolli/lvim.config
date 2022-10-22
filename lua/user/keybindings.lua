@@ -12,8 +12,8 @@ M.config = function()
   -- lvim.keys.normal_mode["<C-q>"] = ":q<cr>" -- or vim.keymap.set("n", "<C-q>", ":q<cr>" )
 
   -- Cycle buffer with shift + h/l
-  -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
-  -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
+  lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
+  lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
   -- Move line up/down using alt+j/k in normal and insert mode
   lvim.keys.insert_mode["∆"] = "<Esc>:m .+1<CR>==gi"
