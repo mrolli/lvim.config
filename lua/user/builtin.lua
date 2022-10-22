@@ -2,15 +2,26 @@
 Change/add to lvim builtins
 ]]
 local M = {}
+local components = require "lvim.core.lualine.components"
 
 M.config = function()
 
   -- lualine - https://github.com/nvim-lualine/lualine.nvim
   -- ================================
-  lvim.builtin.lualine.sections.lualine_y = { "spaces", {
-    "fileformat",
-    icons_enabled = false
-  }, "encoding", "filetype" }
+  lvim.builtin.lualine.sections.lualine_x = {
+    components.diagnostics,
+    components.treesitter,
+    components.lsp,
+  }
+  lvim.builtin.lualine.sections.lualine_y = {
+    components.filetype,
+    {
+      "fileformat",
+      icons_enabled = false
+    },
+    "encoding",
+    components.spaces,
+  }
   lvim.builtin.lualine.sections.lualine_z = { "progress", "location" }
 
 
