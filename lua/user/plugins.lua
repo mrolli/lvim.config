@@ -91,6 +91,15 @@ M.config = function()
       end,
     },
     {
+      "preservim/vim-markdown",
+      setup = function()
+        vim.g.vim_markdown_no_extensions_in_markdown = 1
+        vim.g.vim_markdown_edit_url_in = 'tab'
+      end,
+      ft = { "markdown" },
+      disable = not lvim.user.builtin.vim_markdown.active,
+    },
+    {
       "iamcco/markdown-preview.nvim",
       run = "cd app && npm install",
       setup = function()

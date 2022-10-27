@@ -22,7 +22,8 @@ require('user.theme').gruvbox_material()
 -- Customization
 -- ==============================
 lvim.user.builtin.editorconfig     = { active = true } -- enable/disable editorconfig
-lvim.user.builtin.markdown_preview = { active = true } -- enable/disable mardown preview
+lvim.user.builtin.vim_markdown     = { active = true } -- enable/disable vim-markdown
+lvim.user.builtin.markdown_preview = { active = true } -- enable/disable markdown preview
 
 
 -- Core plugins configuration
