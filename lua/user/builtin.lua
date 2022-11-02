@@ -37,11 +37,6 @@ M.config = function()
   lvim.builtin.comment.mappings.extra = true
 
 
-  -- nvim-notify - https://github.com/rcarriga/nvim-notify
-  -- ================================
-  lvim.builtin.notify.active = true
-
-
   -- toggleterm.nvim - https://github.com/akinsho/toggleterm.nvim
   -- ================================
   lvim.builtin.terminal.active = true
