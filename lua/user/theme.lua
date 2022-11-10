@@ -12,13 +12,13 @@ M.gruvbox_material = function ()
   vim.g.gruvbox_material_spell_foreground = 'colored'
   vim.g.gruvbox_material_ui_contrast = 'low'
   vim.g.gruvbox_material_diagnostic_text_highlight = 1
-  vim.g.gruvbox_material_diagnostic_line_highlight = 1
+  -- vim.g.gruvbox_material_diagnostic_line_highlight = 1
   vim.g.gruvbox_material_diagnostic_virtual_text = 'colored'
-  vim.g.gruvbox_material_better_performance = 1
+  -- vim.g.gruvbox_material_better_performance = 1
 
   lvim.colorscheme = "gruvbox-material"
   lvim.builtin.lualine.theme = "gruvbox-material"
-  io.popen('switch_theme gruvbox-material')
+  os.execute('switch_theme gruvbox-material')
 end
 
 -- https://github.com/folke/tokyonight.nvim
