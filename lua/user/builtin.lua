@@ -24,6 +24,12 @@ M.config = function()
   }
   lvim.builtin.lualine.sections.lualine_z = { "progress", "location" }
 
+  -- indentlines.vim
+  -- ================================
+  lvim.builtin.indentlines.char = '▏'
+  lvim.builtin.indentlines.use_treesitter = true
+  lvim.builtin.indentlines.show_current_context = true
+
 
   -- alpha-nvim configuration - https://github.com/goolord/alpha-nvim
   -- ================================
