@@ -42,7 +42,6 @@ for all configured plugins.
     * [nvim-treesitter/nvim-treesitter-textobjects](https://github.com/nvim-treesitter/nvim-treesitter-textobjects): Support for additional coding related textobjects like classes and functions.
 * Visual Helpers
     * [jeffkreeftmeijer/vim-numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle): Automatically switch between absolute and relative line numbers when switching active panes
-    * [lukas-reineke/indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim): Visually improve recognition of line indentation and whitespace/tabs
     * [folke/zen-mode.nvim](https://github.com/folke/zen-mode.nvim) and [folke/twilight.nvim](https://github.com/folke/twilight.nvim): Distraction-free coding in Neovim
     * [folke/trouble.nvim](https://github.com/folke/trouble.nvim): A pretty list for showing diagnostics, references, telescope results, quickfix and location lists to help you solve all the trouble your code is causing.
 * Other Plugins
