@@ -147,6 +147,14 @@ M.config = function()
   --     ["<C-k>"] = actions.move_selection_previous,
   --   },
   -- }
+
+
+  -- null-ls - https://github.com/jose-elias-alvarez/null-ls.nvim
+  -- =========================================
+  local linters = require "lvim.lsp.null-ls.linters"
+  linters.setup {
+    { name = "markdownlint" },
+  }
 end
 
 
