@@ -18,7 +18,7 @@ M.gruvbox_material = function ()
 
   lvim.colorscheme = "gruvbox-material"
   lvim.builtin.lualine.theme = "gruvbox-material"
-  os.execute('switch_theme gruvbox-material')
+  io.popen('switch_theme gruvbox-material')
 end
 
 -- https://github.com/folke/tokyonight.nvim
@@ -56,7 +56,7 @@ M.tokyonight_storm = function ()
 
   lvim.colorscheme = "tokyonight"
   lvim.builtin.lualine.theme = "tokyonight"
-  os.execute('switch_theme tokyonight-storm')
+  io.popen('switch_theme tokyonight-storm')
 end
 
 -- See https://rosepinetheme.com/
