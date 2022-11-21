@@ -74,6 +74,13 @@ M.config = function()
     w = { "<cmd>Trouble workspace_diagnostics<cr>", "Wordspace Diagnostics" },
   }
 
+  -- Add on/off switch for diagnostics
+  local wk = require("which-key")
+  wk.register({
+    ["<leader>lD"] = { "<cmd>lua vim.diagnostic.disable()<cr>", "Disable Diagnostics" },
+    ["<leader>lE"] = { "<cmd>lua vim.diagnostic.enable()<cr>", "Enable Diagnostics" },
+  })
+
   -- Extra bindings for vim-fugitive functionality
   lvim.builtin.which_key.mappings.g.S = { "<cmd>G push<CR>", "Push" }
   lvim.builtin.which_key.mappings.g.L = { "<cmd>G pull<CR>", "Pull" }
