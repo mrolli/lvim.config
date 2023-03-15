@@ -5,6 +5,11 @@ local M = {}
 local components = require "lvim.core.lualine.components"
 
 M.config = function()
+  -- LSP settings
+  -- ================================
+  lvim.lsp.diagnostics.virtual_text = {
+    format = lvim.lsp.diagnostics.float.format
+  }
 
   -- lualine - https://github.com/nvim-lualine/lualine.nvim
   -- ================================
