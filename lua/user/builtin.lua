@@ -75,6 +75,9 @@ M.config = function()
   lvim.builtin.treesitter.ensure_installed = languages
   lvim.builtin.treesitter.ignore_install = { "haskell", "norg" }
   lvim.builtin.treesitter.highlight.enable = true
+  lvim.builtin.treesitter.incremental_selection = {
+    enable = true,
+  }
   lvim.builtin.treesitter.rainbow.enable = true
   lvim.builtin.treesitter.textobjects = {
     select = {
@@ -156,10 +159,19 @@ M.config = function()
 
   -- null-ls - https://github.com/jose-elias-alvarez/null-ls.nvim
   -- =========================================
-  local linters = require "lvim.lsp.null-ls.linters"
-  linters.setup {
-    { name = "markdownlint" },
-  }
+  -- local linters = require "lvim.lsp.null-ls.linters"
+  -- linters.setup {
+  --   { name = "markdownlint" },
+  -- }
+
+
+  -- lvim.lsp.diagnostics.virtual_text = {
+  --   format = function(d)
+  --       return string.format("(%s) %s", d.code, d.message)
+  --   end
+  -- }
+
+
 end
 
 
