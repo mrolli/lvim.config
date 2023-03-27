@@ -108,6 +108,12 @@ M.config = function()
       end,
       ft = { "markdown" },
       disable = not lvim.user.builtin.markdown_preview.active,
+    },
+    {
+      "ggandor/leap.nvim",
+      setup = function()
+        require("leap").add_default_mappings()
+      end
     }
   }
 end
