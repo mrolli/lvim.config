@@ -10,7 +10,8 @@ M.config = function()
   end
 
   colorizer.setup({
-    '*';
+    '*',
+    '!gitcommit'
     -- '!vim';
   }, {
       RGB = true, -- #RGB hex codes
